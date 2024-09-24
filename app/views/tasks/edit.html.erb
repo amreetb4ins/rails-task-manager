@@ -1,5 +1,5 @@
-<%= form_with model: @task do |f| %>
-  <%= f.label :title %>
+<%= form_for @task do |f| %>
+  <%= f.label :task %>
   <%= f.text_field :title %>
   <%= f.label :details %>
   <%= f.text_field :details %>

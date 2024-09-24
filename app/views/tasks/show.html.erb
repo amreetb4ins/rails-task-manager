@@ -5,3 +5,5 @@
 <p> The task is not completed yet </p>
 
  <%= link_to 'Back to list', tasks_path %>
+
+<%= link_to 'Delete task', task_path(@task),   data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
